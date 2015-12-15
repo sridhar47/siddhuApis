@@ -52,6 +52,20 @@ module.exports = {
   			}
   		})
   	}
+  },
+  list: function(cb){
+    User.find().exec(function(err, users){
+      if(!err){
+        if(users.length > 0){
+          users.map(function(obj){
+            delete obj.password
+          });
+          cb(null, users)
+        }else{
+          cb(null, 'No users registered upto now')
+        }
+      }
+    })
   }
 };
 

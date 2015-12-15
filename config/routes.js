@@ -36,7 +36,8 @@ module.exports.routes = {
   '/products/add': 'ScheduleOrdersController.add',
   '/dmList': 'DmListController.dmListAll',
   '/login': 'UserController.login',
-  '/signup': 'UserController.signup'
+  '/signup': 'UserController.signup',
+  '/user/list': 'UserController.list',
 
   /***************************************************************************
   *                                                                          *

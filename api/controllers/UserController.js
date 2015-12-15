@@ -23,6 +23,14 @@ module.exports = {
 				res.json(response)
 			}
 		});
+	},
+
+	list: function(req, res){
+		User.list(function(err, response){
+			if(!err){
+				res.json(response)
+			}
+		})
 	}
 
 };
