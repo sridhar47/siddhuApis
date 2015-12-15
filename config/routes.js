@@ -32,9 +32,11 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  '/getProductsList': 'ScheduleOrdersController.getProductsList',
+  '/products/add': 'ScheduleOrdersController.add',
+  '/dmList': 'DmListController.dmListAll',
+  '/login': 'UserController.login',
+  '/signup': 'UserController.signup'
 
   /***************************************************************************
   *                                                                          *
